@@ -10,6 +10,7 @@ from pages.sale_page import Sales
 def driver():
     options = Options()
     options.add_argument("--start-maximized")
+    options.add_argument("--headless")
     chrome_driver = webdriver.Chrome(options=options)
     return chrome_driver
 
